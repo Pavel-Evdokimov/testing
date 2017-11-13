@@ -15,7 +15,7 @@ describe('Module lib', () => {
             assert.notEqual(true, lib.checkToEverethingIsNumber(null));
         });
         it('false if "some string"', () => {
-            assert.notEqual(true, lib.checkToEverethingIsNumber(null));
+            assert.notEqual(true, lib.checkToEverethingIsNumber('some string'));
         });
         it('false if an object', () => {
             assert.notEqual(true, lib.checkToEverethingIsNumber({}));
